@@ -8,7 +8,9 @@ def printSquare(n):
     for i in range(1, n+1):
         sum = sum + (i*i)
 
-    print("Sum of Squares of first %d natural numbers is " % n, sum)
+    print(
+        f"Sum of Squares of first {n} natural numbers is ", sum
+    )
 
 
 def sleepFun(n):
@@ -31,8 +33,9 @@ def main():
     for i in range(len(threadArr1)):
         threadArr1[i].join()
 
-    print("Time of Execution of Sum of squares function is: %s seconds\n" %
-          (time.time()-startTime))
+    print(
+        f"Time of Execution of Sum of squares function is: {(time.time()-startTime)} seconds\n"
+    )
 
     startTime = time.time()
     threadArr2 = []
@@ -44,8 +47,9 @@ def main():
     for i in range(len(threadArr2)):
         threadArr2[i].join()
 
-    print("Time of Execution of Sleep function is: %s seconds" %
-          (time.time()-startTime))
+    print(
+        f"Time of Execution of Sleep function is: {(time.time()-startTime)} seconds"
+    )
 
 
 if __name__ == "__main__":
