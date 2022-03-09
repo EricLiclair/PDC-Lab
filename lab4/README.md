@@ -6,6 +6,8 @@
 
 `00:01:06` - Total Time
 
+[Parallely Scraped Data](https://github.com/EricLiclair/PDC-Lab/blob/main/lab4/parallely.json)
+
 
 ## Sequencial Scraping
 
@@ -14,3 +16,5 @@
 `13:07:39` - End Time
 
 `00:08:08` - Total Time
+
+[Sequencially Scraped Data](https://github.com/EricLiclair/PDC-Lab/blob/main/lab4/sequentially.json)
