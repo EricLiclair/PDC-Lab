@@ -1,1 +1,5 @@
 /venv/
+**/venv/
+
+**/data/
+**/dask-worker-space
