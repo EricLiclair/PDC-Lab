@@ -14,12 +14,12 @@ def get_url(month):
 
 def download_file_for_month(month):
   url = get_url(month)
-  r = requests.get(url, stream=True)
+  r = requests.get(url, stream=True) 
   file_size = int(r.headers["content-length"])
-  with open(f"data/yellow_tripdata_2019-{month}.csv", "wb") as f:
+  with open(f"data2/yellow_tripdata_2019-{month}.csv", "wb") as f:
     for data in tqdm(iterable=r.iter_content(chunk_size=CHUNK_SIZE), total=file_size/CHUNK_SIZE, unit="KB"):
       f.write(data)
-  print("downloaded data set for month {month}")
+  print(f"downloaded data set for month {month}")
 
 
 
